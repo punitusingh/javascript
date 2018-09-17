@@ -1,0 +1,107 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+
+.wizard-component{
+  width: 80%;
+  height: 700px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.step-navigation{
+  display: flex;
+  justify-content: space-between;
+}
+
+.step-navigation.first-step{
+  justify-content: flex-end;
+}
+
+.step-navigation-item{
+  width: 200px;
+  margin: 25px;
+  font-weight: bold;
+}
+
+.step-navigation-item.next, .step-navigation-item.finished{
+  background-color: darkgreen;
+  color: white;
+}
+
+.step-navigation-item.prev{
+  background-color: darkred;
+  color: white;
+}
+
+.step-bread-crumb{
+  margin: 25px;
+}
+
+.step-bread-crumb-item{
+  margin: 25px;
+  font-weight: bold;
+}
+
+.step-bread-crumb-item-selected{
+  background-color: lightseagreen;
+  color: white;
+}
+
+
+button{
+  padding:20px;
+  border-radius: 25px;
+}
+
+input, select, option{
+  border-radius: 5px;
+  height: 25px;
+  border: 1px solid gray;
+}
+
+.row{
+  margin: 25px;
+}
+
+.row .small-6{
+  display: inline-block;
+  width:45%;
+}
+
+.component{
+  margin: 25px;
+}
+
+.underline{
+  text-decoration: underline;
+}
