@@ -31,7 +31,7 @@
 
 .wizard-component{
   width: 80%;
-  height: 700px;
+  min-height: 500px;
   margin: 30px auto;
   display: flex;
   flex-direction: column;
@@ -61,6 +61,10 @@
 .step-navigation-item.prev{
   background-color: darkred;
   color: white;
+}
+
+.step-navigation-item.prev.disabled{
+  visibility: hidden;
 }
 
 .step-bread-crumb{
@@ -104,4 +108,8 @@ input, select, option{
 
 .underline{
   text-decoration: underline;
+}
+
+.error{
+  color: red;
 }

@@ -1,18 +1,17 @@
 ```ecmascript 6
- <WizardComponent>
-
-          <Step id='basic-info' title='Basic Information'>
-            <BasicInfo/>
-          </Step>
-
-          <Step id='contact-info' title='Contact Information'>
-            <ContactInfoBasic/>
-            <ContactInfoAdvance/>
-          </Step>
-
-          <Step id='job-preference' title='Job Preference'>
-            <JobPreference/>
-          </Step>
-
-        </WizardComponent>
+ <WizardComponent titles={[
+             {id:'basicInfo', title:'Basic Information'},
+             {id:'contactInfo', title:'Contact Information'},
+             {id:'jobPreference', title:'Job Preference'},
+             {id:'review', title:'Thank you for your information'},
+         ]}
+ 
+          steps={[
+              <BasicInfo titleId='basicInfo' id='basicInfo' />,
+              <ContactInfoBasic titleId='contactInfo'  id='contactInfoBasic'/>,
+              <ContactInfoAdvance titleId='contactInfo' id='contactInfoAdvance'/>,
+              <JobPreference titleId='jobPreference' id='jobPreference'/>,
+              <Review titleId='review' id='review'/>
+          ]}
+         />
 ```
