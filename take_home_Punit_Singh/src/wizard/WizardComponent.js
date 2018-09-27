@@ -98,6 +98,10 @@ class WizardComponent extends Component{
     }
 
     navigate(currentStepId){
+        if(!this.props.currentStepIsValid()){
+            this.updateErrorState(true);
+            return;
+        }
         const currentStepIndex = this.stepIdVsIndexMap[currentStepId];
         const currentStepTitleId = this.props.steps[currentStepIndex].props.titleId;
         this.props.updateStep({currentStepIndex, currentStepId, currentStepTitleId});
