@@ -4,4 +4,8 @@
 
 //import './component-composition';
 
-import './render-props';
+//import './render-props';
+
+//import './hooks';
+
+import './redux';

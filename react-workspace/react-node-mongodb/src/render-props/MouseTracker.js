@@ -22,14 +22,15 @@ export default  class MouseTracker extends React.Component{
     });
   }
 
+  static renderTheCat(mouse){
+    return <Cat mouse={mouse} />
+  }
 
   render(){
     return (
       <div>
         <h1>Move the mouse around!</h1>
-        <Mouse render={mouse => (
-          <Cat mouse={mouse} />
-        )}/>
+        <Mouse render={MouseTracker.renderTheCat}/>
       </div>
     );
   }
